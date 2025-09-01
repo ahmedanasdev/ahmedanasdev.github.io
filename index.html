@@ -4,109 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ahmed Anas | Portfolio</title>
-  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      text-align: center;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: fadeIn 2s ease-in;
-    }
-
-    .card {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-      max-width: 500px;
-      width: 90%;
-      animation: slideUp 1.5s ease-in-out;
-    }
-
-    .profile-img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #fff;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease;
-    }
-
-    .profile-img:hover {
-      transform: scale(1.1);
-    }
-
-    h1 {
-      margin: 10px 0;
-      font-size: 28px;
-    }
-
-    h2 {
-      font-weight: 400;
-      color: #ddd;
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 1.6;
-      color: #eee;
-      margin-bottom: 25px;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: #fff;
-      background: #ff5722;
-      padding: 12px 18px;
-      border-radius: 50%;
-      margin: 0 10px;
-      font-size: 18px;
-      transition: 0.3s;
-      display: inline-block;
-    }
-
-    .links a:hover {
-      background: #e64a19;
-      transform: translateY(-3px) scale(1.1);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-  </style>
 </head>
 <body>
-  <div class="card">
-    <img src="profile.jpg" alt="Ahmed Anas" class="profile-img">
+  <header>
+    <img src="me.jpg" alt="Ahmed Anas" class="profile-pic">
     <h1>Ahmed Anas</h1>
-    <h2>Service Operations Engineer | Aspiring DevOps</h2>
+    <p>Service Operations Engineer | Aspiring DevOps | AWS Cloud Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
     <p>
-      3+ years in IT Operations & 3+ years in Service Operations.  
-      Experienced in IT support, enterprise mobility, and service continuity.  
-      Currently investing in DevOps: CI/CD, automation, and infrastructure as code.  
-      Passionate about reliability, ownership, and continuous delivery.
+      Service Operations Engineer with <strong>3 years IT Operations</strong> and <strong>3 years Service Operations</strong> experience.
+      Skilled in IT support, enterprise mobility, incident resolution, and cross-team collaboration.
+      Currently investing in DevOps: CI/CD, automation, containers, Infrastructure as Code, and <strong>AWS Cloud</strong>.
     </p>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/ahmed-anas-23b85b96/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>🔹 IT Service Desk Engineer (3 years) – VOIS EG</li>
+      <li>🔹 Service Operations Engineer (3 years) – VOIS EG</li>
+      <li>🔹 Hands-on with ServiceNow, Remedy, Jira, Workspace ONE UEM, Azure AD, O365</li>
+      <li>🔹 Actively building skills in DevOps: Docker, Kubernetes, Terraform, Ansible, CI/CD, and <strong>AWS Cloud</strong></li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Ansible Flask Deployment</h3>
+        <p>Automated deployment of a Flask app with Nginx & MariaDB using Ansible roles.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Docker CI/CD Pipeline</h3>
+        <p>GitHub Actions workflow to build, test, and deploy containerized apps.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>AWS Scalable Web App</h3>
+        <p>Provisioned scalable EC2 apps with ALB, Auto Scaling, IAM roles, and CloudWatch monitoring.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/ahmed-anas-23b85b96/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/ahmedanasdev" target="_blank"><i class="fab fa-github"></i></a>
       <a href="mailto:ahmedanas04@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ahmed Anas | Built with ❤️ and DevOps spirit</p>
+  </footer>
 </body>
 </html>
