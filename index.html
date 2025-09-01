@@ -8,19 +8,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <img src="me.jpg" alt="Ahmed Anas" class="profile-pic">
-    <h1>Ahmed Anas</h1>
-    <p>Service Operations Engineer | Aspiring DevOps | AWS Cloud Enthusiast</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Ahmed Anas" class="profile-img">
+      <h1>Ahmed Anas</h1>
+      <p>Service Operations Engineer | DevOps Enthusiast | AWS Cloud</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ahmed-anas-23b85b96/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ahmedanasdev" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:ahmedanas04@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
+  <!-- About Me -->
+  <section id="about" class="glass-card">
     <h2>About Me</h2>
     <p>
       Service Operations Engineer with <strong>3 years IT Operations</strong> and <strong>3 years Service Operations</strong> experience.
@@ -29,7 +32,8 @@
     </p>
   </section>
 
-  <section id="experience">
+  <!-- Experience -->
+  <section id="experience" class="glass-card">
     <h2>Experience</h2>
     <ul>
       <li>🔹 IT Service Desk Engineer (3 years) – VOIS EG</li>
@@ -39,36 +43,57 @@
     </ul>
   </section>
 
-  <section id="projects">
+  <!-- Skills -->
+  <section id="skills" class="glass-card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="skill">AWS <i class="fab fa-aws"></i></span>
+      <span class="skill">Docker <i class="fab fa-docker"></i></span>
+      <span class="skill">Kubernetes</span>
+      <span class="skill">Ansible</span>
+      <span class="skill">Terraform</span>
+      <span class="skill">CI/CD</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="glass-card">
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
         <h3>Ansible Flask Deployment</h3>
         <p>Automated deployment of a Flask app with Nginx & MariaDB using Ansible roles.</p>
+        <div class="project-skills">
+          <span>Ansible</span>
+          <span>Flask</span>
+          <span>Nginx</span>
+        </div>
         <a href="#" class="btn">View Project</a>
       </div>
       <div class="project-card">
         <h3>Docker CI/CD Pipeline</h3>
         <p>GitHub Actions workflow to build, test, and deploy containerized apps.</p>
+        <div class="project-skills">
+          <span>Docker</span>
+          <span>CI/CD</span>
+          <span>GitHub Actions</span>
+        </div>
         <a href="#" class="btn">View Project</a>
       </div>
       <div class="project-card">
         <h3>AWS Scalable Web App</h3>
         <p>Provisioned scalable EC2 apps with ALB, Auto Scaling, IAM roles, and CloudWatch monitoring.</p>
+        <div class="project-skills">
+          <span>AWS</span>
+          <span>Terraform</span>
+          <span>CloudWatch</span>
+        </div>
         <a href="#" class="btn">View Project</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/ahmed-anas-23b85b96/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/ahmedanasdev" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="mailto:ahmedanas04@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </section>
-
+  <!-- Footer -->
   <footer>
     <p>© 2025 Ahmed Anas | Built with ❤️ and DevOps spirit</p>
   </footer>
